@@ -6,6 +6,21 @@
     display: grid;
 }
 
-#logoHolder, #aboutCompany, #locationCarousel, #locationLinks, #suggestPlace {
+#logoHolder, #aboutCompany, #locationLinks, #suggestPlace {
     border: 1px solid red;
+}
+
+img {
+    height: 500px;
+    width: 500px;
+}
+
+#locationCarousel {
+    border: 1px solid red;
+    display: flexbox;
+    flex-wrap: wrap;
+}
+
+img#test {
+
 }
