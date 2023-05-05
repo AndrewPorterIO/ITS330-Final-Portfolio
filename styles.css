@@ -1,26 +1,76 @@
-#navigationBar, footer {
+header {
     text-align: center;
+    font-weight: bold;
+    position: sticky;
+    top: 10px;
+    background-color: darkgrey;
+    padding: 10px;
+    opacity: 0.5;
 }
 
-#mainPage {
-    display: grid;
-}
-
-#logoHolder, #aboutCompany, #locationLinks, #suggestPlace {
-    border: 1px solid red;
+header:hover {
+    opacity: 0.9;
 }
 
 img {
-    height: 500px;
-    width: 500px;
+    height: 300px;
+    width: 300px;
 }
 
-#locationCarousel {
-    border: 1px solid red;
+img#logoYo {
+    height: 50px;
+    width: 50px;
+    opacity: 0.5;
+}
+
+#companyTitle {
+    display: inline;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+.mainPage {
+    display: grid;
+    grid-template-areas: 
+        'header header header header header'
+        'left left main main main'
+        'left left main main main'
+        'menu menu main main main'
+        'menu menu main main main';
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.logoHolder {
+    grid-area: header;
+    position: sticky;
+    top: 5px;
+    text-align: center;
+}
+
+.locationLinks {
+    grid-area: menu;
+}
+
+.picGrid {
     display: flexbox;
     flex-wrap: wrap;
+    grid-area: main;
 }
 
-img#test {
+.aboutCompany {
+    grid-area: left;
+}
 
+.logo {
+    position: relative;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
 }
