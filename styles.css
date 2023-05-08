@@ -17,6 +17,10 @@ img {
     width: 300px;
 }
 
+h2 {
+    text-decoration: underline;
+}
+
 img#logoYo {
     height: 50px;
     width: 50px;
@@ -31,6 +35,7 @@ img#logoYo {
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: bold;
+    font-size: x-large;
 }
 
 .mainPage {
@@ -38,11 +43,10 @@ img#logoYo {
     grid-template-areas: 
         'header header header header header'
         'left left main main main'
-        'left left main main main'
+        'menu menu main main main'
         'menu menu main main main'
         'menu menu main main main';
     padding: 10px;
-    border: 1px solid black;
 }
 
 .logoHolder {
@@ -75,4 +79,7 @@ footer {
     font-weight: bold;
 }
 
-
+#test {
+    border: 1px solid black;
+    border-radius: 20px;
+}
