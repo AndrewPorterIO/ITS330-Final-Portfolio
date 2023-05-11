@@ -1,20 +1,17 @@
 header {
     text-align: center;
-    font-weight: bold;
     position: sticky;
     top: 10px;
-    background-color: darkgrey;
     padding: 10px;
-    opacity: 0.5;
+    font-weight: bold;
+    font-size: large;
 }
 
-header:hover {
-    opacity: 0.9;
-}
-
-img {
+div.picGrid > img {
     height: 300px;
-    width: 300px;
+    width: fit-content;
+    border: 1px solid black;
+    border-radius: 20px;
 }
 
 h2 {
@@ -22,9 +19,8 @@ h2 {
 }
 
 img#logoYo {
-    height: 50px;
-    width: 50px;
-    opacity: 0.5;
+    height: 100px;
+    width: 100px;
 }
 
 #companyTitle {
@@ -34,8 +30,7 @@ img#logoYo {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-weight: bold;
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 .mainPage {
@@ -47,6 +42,7 @@ img#logoYo {
         'menu menu main main main'
         'menu menu main main main';
     padding: 10px;
+    min-height: 100vh;
 }
 
 .logoHolder {
@@ -64,6 +60,7 @@ img#logoYo {
     display: flexbox;
     flex-wrap: wrap;
     grid-area: main;
+    margin-left: 10px;
 }
 
 .aboutCompany {
@@ -79,7 +76,19 @@ footer {
     font-weight: bold;
 }
 
-#test {
-    border: 1px solid black;
-    border-radius: 20px;
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: green;
+}
+
+a:visited {
+    color: black;
+}
+
+a:visited:hover {
+    color: green;
 }
