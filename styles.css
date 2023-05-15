@@ -9,7 +9,7 @@ header {
 
 div.picGrid > img {
     height: 300px;
-    width: fit-content;
+    width: 500px;
     border: 2px solid black;
     border-radius: 20px;
 }
@@ -42,6 +42,19 @@ img#logoYo {
         'menu menu main main main'
         'menu menu main main main';
     min-height: 100vh;
+    line-height: 2;
+}
+
+.locationPage {
+    display: grid;
+    grid-template-areas: 
+        'header header header header header'
+        'menu menu main main main'
+        'menu menu main main main'
+        'menu menu main main main'
+        'menu menu main main main';
+    min-height: 100vh;
+    line-height: 2;
 }
 
 .logoHolder {
@@ -53,7 +66,7 @@ img#logoYo {
 
 .locationLinks {
     grid-area: menu;
-    padding-left: 5px;
+    padding-left: 25px;
 }
 
 .picGrid {
@@ -65,7 +78,7 @@ img#logoYo {
 
 .aboutCompany {
     grid-area: left;
-    padding-left: 5px;
+    padding-left: 25px;
 }
 
 .logo {
@@ -83,7 +96,7 @@ a {
 }
 
 a:hover {
-    color: green;
+    color: rgb(120, 81, 169);
 }
 
 a:visited {
@@ -91,11 +104,11 @@ a:visited {
 }
 
 a:visited:hover {
-    color: green;
+    color: rgb(120, 81, 169);
 }
 
 .headerColor {
-    background-color: white;
+    background-color: rgb(103, 248, 253);
     border-radius: 20px;
     opacity: 0.65;
 }
@@ -104,4 +117,8 @@ a:visited:hover {
     background-image: linear-gradient(rgb(103, 248, 253), rgb(238, 253, 100));
     border: 2px solid black;
     border-radius: 20px;
+}
+
+p {
+    text-indent: 20px;
 }
